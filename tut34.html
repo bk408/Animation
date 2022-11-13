@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /*  border: 2px solid red;*/
+        background-color: burlywood;
+        box-shadow: 4px 4px 30px green;
+        /*box shadow: offset-x == offset-y == blur radius == color*/
+        /*If i use negative value then direction is change for box shadow*/
+        /*box shadow:  offset-x == offset-y  == blurradius ==spreadradius == color */
+        /* box-shadow: 4px 4px 30px 34px green;*/
+
+        box-shadow: inset 3px 5px lightseagreen;
+        /* box-shadow:inset is used for shadow inside the box*/
+
+        box-shadow: 4px 4px red, 2px 2px green;
+
+    }
+
+    .card h2 {
+        text-shadow: 3px 4px rgb(245, 243, 243);
+        text-shadow: -3px -4px -2px rgb(235, 228, 228);
+    }
+</style>
+
+
+<body>
+    <div class="container">
+
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus voluptatum beatae unde est?
+                Commodi obcaecati voluptas sed nobis nesciunt repudiandae, in, a dicta alias reprehenderit nemo, unde
+                aperiam voluptate dolor doloribus voluptates adipisci.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus voluptatum beatae unde est?
+                Commodi obcaecati voluptas sed nobis nesciunt repudiandae, in, a dicta alias reprehenderit nemo, unde
+                aperiam voluptate dolor doloribus voluptates adipisci.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus voluptatum beatae unde est?
+                Commodi obcaecati voluptas sed nobis nesciunt repudiandae, in, a dicta alias reprehenderit nemo, unde
+                aperiam voluptate dolor doloribus voluptates adipisci.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
